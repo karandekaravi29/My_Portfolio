@@ -1,3 +1,5 @@
+
+
 /* #### navbar #### */
 .navbar{
     position: fixed;
@@ -82,7 +84,7 @@
     height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: 2px solid var(--nero);
     border-radius: 10px;
@@ -90,10 +92,14 @@
 }
 .home .row-left{
     text-align: center;
+    padding-top: 60px;
 }
 .home .row-left h3{
+    margin-top: 40px;
     color: var(--green);
     font-weight: 400;
+    margin-bottom: 10px;
+
     /* text-transform: uppercase; */
 }
 .home .row-left h1{
@@ -193,7 +199,21 @@
     color: #fff;
     font-weight: 400;
 }
+.home .row-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 80px;
+    margin-top: 300px;
+    padding-left: 300px;
+}
 
+.badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px; /* 👈 move left */
+}
 
 .badge {
     display: flex; /* Enables side-by-side alignment */
@@ -204,14 +224,11 @@
 }
 
 .badge-container {
-    background-color: #1c1c1c;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px hsl(186, 100%, 50%);
     display: flex;
+    justify-content: center;  /* center properly */
     align-items: center;
-    justify-content: center;
-    min-width: 250px;
+    padding: 20px;
+    margin-right:100px;
 }
 
 
